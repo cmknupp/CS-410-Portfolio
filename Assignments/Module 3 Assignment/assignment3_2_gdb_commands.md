@@ -1,3 +1,6 @@
+### Just wanted to say thanks for posting this.  I was floundering with this assignment as I had to install GDB before any of the commands would work and I thought I was not doing it correctly.  Your github helped assure me I was
+### on the right track.  I appreciate you.  Also helpful note:  x/s <hex address> will give you the string or formatting string at a given location. I added an example below. 
+
 # Assignment 3.2
 
 ## Binary file to hex
@@ -58,3 +61,8 @@ Dump of assembler code for function main:
    0x000000000040067f <+82>:    callq  0x400530 <exit@plt>
 End of assembler dump.
 ```
+### Determining strings example
+
+```bash
+(gbd) x/s 0x400714
+0x400714:   "Please enter your name"
